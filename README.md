@@ -1,6 +1,6 @@
 Flutter is a new platform that everyone is still learning that is why most of the devs not able to find what to prepare for Flutter interview. This blog is helpful for both interviewer and candidate.
 
-### Find Youtube Channel for detail answers:
+<img src="images/flutter_interview.png" height="400" alt="Profile image"/> 
 
 Following are the types of questions asked in the interview.
 1. Life Cycle & Routes
