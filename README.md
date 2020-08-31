@@ -145,8 +145,6 @@ some also related to assets, firebase, etc…
 
 * Support by clicking the :star: button on the upper right of this page. :v:
 
-[Check out MindOrks awesome open source projects here](https://mindorks.com/open-source-projects)
-
 ### License
 ```
    Copyright (C) 2020 MINDORKS NEXTGEN PRIVATE LIMITED
