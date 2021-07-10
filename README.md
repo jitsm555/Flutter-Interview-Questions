@@ -89,26 +89,55 @@ SafeArea(
 - How to get responsive Flutter layouts? [Learn from here](https://stackoverflow.com/questions/59976971/how-to-get-responsive-flutter-layouts)
    
 # 3. Async operations
-- Explain async, await , thenand Futures.
+- Explain async, await , thenand Future keyword
+- Use of yeild keyword?
 - Why build re-triggering again and again? How to scroll to a position in Flutter ListView?
-- Why FutureBuildercalled multiple times? how to resolve this?
-- What’s the difference between async and async* in Dart?
+- Why FutureBuildercalled multiple times? how to resolve this? [Learn from here](https://stackoverflow.com/questions/57793479/flutter-futurebuilder-gets-constantly-called/63299888#63299888)
+- What's the difference between async and async* in Dart?
 - What is a Stream?
 - Differentiate between StreamBuilder and FutureBuilder
 - What is the difference between FutureBuilder and await?
 - What are the ways to use Future Object?
 - How to group multiple Streams?
-- Why in this code, await is not blocking UI?
-- How to perform Syncrnonization in Flutter?
-- Differentiate between Provider and Consumer ?
+- Why await is not blocking UI? [Learn from here](https://stackoverflow.com/questions/62823273/why-in-this-code-await-is-not-blocking-ui-in-flutter/62823966#62823966)
+- How to perform Syncrnonization in Flutter? [Learn from here](https://stackoverflow.com/questions/63176601/flutter-dart-how-to-perform-synchronization/63176650#63176650)
+- Differentiate between Provider and Consumer? [Learn from here](https://stackoverflow.com/a/61820608/5106574) 
 - How to run foreground services?
 - How to schedule a job after specific intervals?
 - Difference between whenCompleted() and then().
 - How to run code after Build() method execution?
+- How to create an HTTP client with headers?
+```dart
+/// To get it done, we need one endpoint and headers and make the HTTP request.
+
+import 'package:http/http.dart' as http;
+final url = Constants.BASE_URL + 'endpoint';
+final headers = {'Content-Type': 'application/x-www-form-urlencoded'};//if required
+Response getResponse = await http.get(Uri.parse(url), headers: headers);
+int statusCode = getResponse.statusCode;
+String responseBody = getResponse.body;
+print('response----' + responseBody);
+
+```
+- Use of http and dio package? Can we use them combined? if yes then how?
+- How Compute works?
+- How to perform multithreading? and return response so that widget can be updated?
+- How do I implement a timer to execute code after a certain delay?
+```dart
+/// There are two ways to do that
+/// 1. Timer
+Timer(Duration(seconds: 2), () {
+  print("Execute this code afer 2 seconds");
+});
+/// 2. Future:
+Future.delayed(Duration(seconds: 2), () {
+   print("Execute this code afer 2 seconds");
+});
+```
 
 # 4. Storage
 
-- Why SharedPreference commit method is deprecated?
+- Why SharedPreference commit method is deprecated? [Learn from here](https://stackoverflow.com/questions/57651489/sharedpreferences-commit-method-showing-deprecated-inside-flutter)
 - How to persist data in Database ?
 
 # 5. Platform Specific Android/iOS
