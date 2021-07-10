@@ -141,19 +141,59 @@ Future.delayed(Duration(seconds: 2), () {
 - How to persist data in Database ?
 
 # 5. Platform Specific Android/iOS
-- How platform channel works?
+- How does the platform channel work?
+- How to perform a background job on a specific platform?
+- How to send local notifications?
 
 # 6. Dart
-- Difference between these operators “?? and ?.”
+- Difference between these operators "?? and ?."
 - Difference between Constand final? Is there any performance issue If I select one of them over another?
 - What is Extention and how to use it with the existing code?
 - What is typedef in Dart?
-- How to handle null conditions? and use of the ‘??’ operator.
-- Use of ‘=>’ operator?
+- How to handle null conditions? and use of the '??' operator.
+- Use of '=>' operator?
 - Differentiate between forEachand whereclause
 - What is the advantage of Factory constructor?
-- Why dialog inside FutureBuilder not working?
+- Why dialog inside FutureBuilder not working? [Learn from here](https://medium.com/flutter-community/flutter-threading-5c3a7b0c065f)
+- Use of compareTo method? [Learn from here](https://api.flutter.dev/flutter/dart-core/num/compareTo.html)
+- Advantages and Disadvantages of using static ?
+- Benefits of an abstract class with a factory constructor?
+  - A factory constructor allows you more control over what the constructor returns. It can return an instance of a subclass or an already existing (cached) instance.
+It can return different concrete implementations based on a constructor parameter:
+```dart
+abstract class WidgetService {
+  factory WidgetService(String type) {
+    switch (type) {
+      case 'a':
+        return ConcreteWidgetServiceA();
+      case 'b':
+        return ConcreteWidgetServiceB();
+      default:
+        return DummyWidgetServiceA();
+    }
+  }
+}
+```
+- Use of extends , interface and mixin ?
+   - extends (inheritance) => Only one class can be inherited along with their public/protected members and behaviors.
+   - implements (contract) => Many classes can be implemented but we have to redefine every behavior.
+   - with(mixin) => Many classes can be mixed in and we can reuse the behavior of them.
+   
+Any class or abstract class can be used as a mixin. But if we declare mixin, it cannot be extended like a normal class or abstract class.   
+```dart
+class A{} //Declaring class
+mixin B{} //Declaring mixin
+class C extends A{} // Valid ✅
+class C implements A{} // Valid ✅
+class C with A{} // Valid ✅
+class C extends B{} // Invalid ❌
+class C implements B{} // Valid ✅
+```
+But a mixin cannot use another mixin.
 
+```dart
+mixin C with B{} // Invalid ❌
+```
 # 7. Architecture
 - How to use Bloc architecture?
 - How to use MVVM architecture?
