@@ -32,31 +32,39 @@ some also related to assets, firebase, etc…
 - How to re-initialize parent widget from child widget? Explain several ways?
 # 2. Widgets
 - What would happen if I converted a stateless widget to Stateful Widget? Is there any performance issue?
-- Flexible Vs Expanded
+- Flexible Vs Expanded [Learn from here](https://stackoverflow.com/questions/52645944/flutter-expanded-vs-flexible)
 - SizeBox VS Container?
 - What is a Spacer widget?
-- How to show/hide widgets?
+- How to show/hide widgets? [Learn from here](https://stackoverflow.com/questions/44489804/show-hide-widgets-in-flutter-programmatically)
 - What is the importance of a TextEditingController?
-- How to shift focus to next TextField in flutter?
+- How to shift focus to next TextField in flutter? [Learn from here](https://stackoverflow.com/questions/49410975/changing-focus-from-one-text-field-to-the-next-in-flutter/62709652#62709652)
 - List the Visibility widgets in flutter and the differences?
 - What are the ways to get data from called Widget?
 - Why ListView inside Column not works?
-- Differentiate between Listview and Listview.Builder
+- Differentiate between Listview and Listview.Builder? [Learn from here](https://stackoverflow.com/a/63075581/5106574)
 - How to scroll to a position in Flutter ListView?
-- How to place a listview inside a SingleChildScrollView but prevent them from scrolling separately?
+- How to place a listview inside a SingleChildScrollView but prevent them from scrolling separately? [Learn from here](https://stackoverflow.com/a/63080296/5106574)
 - How can you update a ListView dynamically?
 - When to use ShrinkWrap the property?
 - Why do we use a Reverse property in a Listview?
 - What is an UnmodifiableListView?
-- How to draw Text over Image?
-- What are keys in Flutter and when should you use it?
+- What is SliverList and how to use it?
+- How to draw Text over Image? [Learn from here](https://medium.com/flutterworld/flutter-text-over-image-bb045a129bae)
+- What are keys in Flutter and when should you use them?
 - What are GlobalKeys?
 - When should you use mainAxisAlignment and crossAxisAlignment?
 - When can you use double.INFINITY?
-- When to use a mainAxisSize?
+- When to use a mainAxisSize? and diff between MainAxisSize.min andMainAxisSize.max ?
 - What is the purpose of a SafeArea?
-- How to assign min-height to the widget? link
-- How to align two items on extremes — one on the left and one on the right?
+    - SafeArea is basically a glorified Padding widget. If you wrap another widget with SafeArea, it adds any necessary padding needed to keep your widget from being blocked by the system status bar, notches, holes, rounded corners, and other "creative" features by manufacturers.
+```dart
+SafeArea(
+  minimum: const EdgeInsets.all(16.0),
+  child: Text('My Widget: ...'),
+)
+```
+- How to assign min-height to the widget? [Learn from here](https://stackoverflow.com/questions/48675781/flutter-correct-way-to-create-a-box-that-starts-at-minheight-grows-to-maxheig/62896724#62896724)
+- How to align two items on extremes - one on the left and one on the right? [Learn from here](https://stackoverflow.com/questions/50365770/flutter-align-two-items-on-extremes-one-on-the-left-and-one-on-the-right)
 - Mention two or more operations that would require you to use or return a Future.
 - Can we use Color and Decoration property simultaneously in the Container? Explain
 - In order for the CrossAxisAlignment.baseline to work what is another property that we need to set?
@@ -66,17 +74,20 @@ some also related to assets, firebase, etc…
 - What is an InheritedWidget? List some examples.
 - When to use Intrinsic height?
 - When to use Custom ScrollView?
-- Difference between GestureDetector and InkWell?
+- Difference between GestureDetector and InkWell? [Learn from here](https://stackoverflow.com/questions/43692923/flutter-container-onpressed/62310664#62310664)
 - What is a vsync?
-- Difference between `AnimationController and Animation?
+- Difference between AnimationController and Animation?
 - When to use a SingleTickerProviderStateMixin and TickerProviderStateMixin?
 - What is Ticker, Tween and AnimatedBuilder?
 - What is an AspectRatio widget used for?
 - What is the purpose of ModalRoute.of()?
-- Difference between RemoveUtil and PopUtil in Flutter navigation?
+- Difference between RemoveUtil and PopUtil in Flutter navigation? [Learn from here](https://stackoverflow.com/questions/62710395/difference-between-removeuntil-and-popuntil-in-flutter-navigation/62711118#62711118)
 - Difference between a Navigator.pushNamed and Navigator.pushReplacementNamed?
 - What is the use of WidgetsBinding class?
-
+- How to perform Hero Animation?
+- Difference between Element Tree, Widget Tree and Render Tree.
+- How to get responsive Flutter layouts? [Learn from here](https://stackoverflow.com/questions/59976971/how-to-get-responsive-flutter-layouts)
+   
 # 3. Async operations
 - Explain async, await , thenand Futures.
 - Why build re-triggering again and again? How to scroll to a position in Flutter ListView?
