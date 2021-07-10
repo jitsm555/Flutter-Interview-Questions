@@ -21,13 +21,15 @@ some also related to assets, firebase, etc…
 - Explain the Stateful Widget Lifecycle?
 - How Flutter Lifecycle different from the Android/iOS life cycle?
 - How build() method works? How it rebuild itself?
-- Does a new state object is created if widget re-build?
-- Why is the build() method in State class and not onStatefulWidgets?
+- Does a new state object is created if the widget re-build?
 - What is a Navigator and what are Routes in Flutter?
 - What are the trees available in Flutter? Eg: Widget Tree, Element Tree…
-- What is the ephemeral state? and Differentiate between ephemeral state and app state?
+- What is the ephemeral state? and Differentiate between ephemeral state and app state? [Learn from here](https://flutter.dev/docs/development/data-and-backend/state-mgmt/ephemeral-vs-app)
 - When do we use the WidgetsBindingObserver?
+- Difference between SchedulerBinding and WidgetBinding? [Learn from here](https://medium.com/flutterworld/flutter-schedulerbinding-vs-widgetsbinding-149c71cb607f)
 - How would you access StatefulWidget properties from its State?
+- If the child widget gets re-initialized, does it also re-initialize the parent widget?
+- How to re-initialize parent widget from child widget? Explain several ways?
 # 2. Widgets
 - What would happen if I converted a stateless widget to Stateful Widget? Is there any performance issue?
 - Flexible Vs Expanded
