@@ -197,26 +197,40 @@ mixin C with B{} // Invalid ❌
 # 7. Architecture
 - How to use Bloc architecture?
 - How to use MVVM architecture?
-- Difference between Bloc vs MVVM ?
-- What are the different state management techniques?
+- Difference between Bloc vs MVVM ?
+- What is Provider state management?
+- What are the different state management techniques? [Learn from here](https://flutter.dev/docs/development/data-and-backend/state-mgmt/options)
 
 # 8. Test Cases
 - How to mock objects? which classes used to do that?
 - How to verify httprequest callbacks?
 - How to catch the Exceptions?
-- Distinguish between unit and UI test cases?
+- UI test cases [Learn from here](https://flutter.dev/docs/cookbook/testing/widget/introduction)
+
 
 # Others
-- If we change localization to the RTL language, is it changed according to language direction
-- Difference between getDocuments() vs snapshots() in Firebase?
+- if we change localization to the RTL language, is it changed according to language direction
+- What is the use of Equatable?
+- Does dart support Method Overloading?
+- How we can handle the error at the project level? Is it possible to show some widgets in that case?
+- How-to Encrypt and Decrypt data while making network calls?
+- Difference between getDocuments() vs snapshots() in Firebase?[Learn from here](https://stackoverflow.com/questions/62610233/what-is-the-difference-between-getdocuments-and-snapshots-in-firestore/62610817#62610817)
 - What is the difference between hot restart and hot reload?
-- How to deal with unwanted widget build?
-- What is the difference between flutter package and flutter plugin.
-- What is the use of addPostFrameCallback ?
-- What is the difference between ‘as’,’ show’ and ‘hide’ in an import statement?
-- Difference between a Single Instance and Scoped Instance ?
-- When Bad State Exception occurs?
+- How to deal with unwanted widget build? [Learn from here](https://stackoverflow.com/questions/52249578/how-to-deal-with-unwanted-widget-build)
+- What is the difference between the flutter package and the flutter plugin?
+- What is the use of addPostFrameCallback ?
+- How to send nested json requests to the server?
+- What is the difference between 'as',' show' and 'hide' in an import statement?
+- Use of export keyword?
+- How to perform infinite scrolling?
+- What are the ways to share images on WhatsApp, Facebook, etc?
+- Difference between a Single Instance and Scoped Instance ?
+- When Bad State Exception occurs? [Learn from here](https://stackoverflow.com/questions/52354195/list-firstwhere-bad-state-no-element/63300764#63300764)
+- How to achieve loose coupling?
 - What is a pubspec file in Dart?
+- How to obfuscate Flutter apps? [Learn from here](https://medium.com/flutterworld/flutter-obfuscation-and-build-optimization-69ff5a338fdb)
+- Procedure to generate release .apk(for Android) and .ipa(for iOS)
+- Why a declarative UI? [Learn from here](https://flutter.dev/docs/get-started/flutter-for/declarative)
 
 
 
